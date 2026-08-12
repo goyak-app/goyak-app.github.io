@@ -14,15 +14,18 @@ i18n
       fa: { translation: fa }
     },
     fallbackLng: 'en',
+    load: 'languageOnly',
     interpolation: {
       escapeValue: false,
     }
   });
 
 const applyLanguageOptions = (lng: string) => {
-  const dir = lng === 'fa' ? 'rtl' : 'ltr';
+  const isFa = lng && lng.startsWith('fa');
+  const dir = isFa ? 'rtl' : 'ltr';
+  const lang = isFa ? 'fa' : 'en';
   document.documentElement.setAttribute('dir', dir);
-  document.documentElement.setAttribute('lang', lng);
+  document.documentElement.setAttribute('lang', lang);
 };
 
 i18n.on('languageChanged', applyLanguageOptions);
