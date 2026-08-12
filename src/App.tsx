@@ -45,7 +45,7 @@ function App() {
     <div className="min-h-screen flex flex-col">
       <header className="px-6 py-4 flex items-center justify-between border-b border-white/10 bg-black/20 backdrop-blur-md sticky top-0 z-50">
         <div className="flex items-center gap-3">
-          <img src="/mascot.png" alt="Goyak Mascot" className="w-10 h-10 object-contain drop-shadow-md" />
+          <img src="./mascot.png" alt="Goyak Mascot" className="w-10 h-10 object-contain drop-shadow-md" />
           <span className="font-bold text-xl tracking-tight text-white">{t('title')}</span>
         </div>
         <div className="flex items-center gap-4">
@@ -56,7 +56,7 @@ function App() {
             <Languages className="w-4 h-4" />
             {i18n.language === 'en' ? 'فارسی' : 'English'}
           </button>
-          <a href="https://github.com/goyak-app/goyak-desktop" target="_blank" rel="noopener noreferrer" className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors text-sm font-medium">
+          <a href="https://github.com/goyak-app/goyak-app.github.io" target="_blank" rel="noopener noreferrer" className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors text-sm font-medium">
             <Code className="w-4 h-4" />
             GitHub
           </a>
@@ -82,7 +82,7 @@ function App() {
               <Download className="w-5 h-5" />
               {t('download')}
             </button>
-            <a href="https://github.com/goyak-app/goyak-desktop" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-8 py-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700 text-white font-bold transition-all active:scale-95 sm:hidden">
+            <a href="https://github.com/goyak-app/goyak-app.github.io" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-8 py-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700 text-white font-bold transition-all active:scale-95 sm:hidden">
               <Code className="w-5 h-5" />
               {t('github')}
             </a>
@@ -96,7 +96,7 @@ function App() {
               <p className="text-xl text-zinc-400 leading-relaxed">{t('features.realtime.desc')}</p>
             </div>
             <div className="flex-1">
-              <img src="/screen1.png" alt="Dashboard" className="w-full rounded-2xl shadow-2xl border border-white/10" />
+              <img src="./screen1.png" alt="Dashboard" className="w-full rounded-2xl shadow-2xl border border-white/10" />
             </div>
           </div>
           
@@ -106,7 +106,7 @@ function App() {
               <p className="text-xl text-zinc-400 leading-relaxed">{t('features.voice.desc')}</p>
             </div>
             <div className="flex-1">
-              <img src="/screen2.png" alt="Dubbing in action" className="w-full rounded-2xl shadow-2xl border border-white/10" />
+              <img src="./screen2.png" alt="Dubbing in action" className="w-full rounded-2xl shadow-2xl border border-white/10" />
             </div>
           </div>
 
@@ -116,7 +116,7 @@ function App() {
               <p className="text-xl text-zinc-400 leading-relaxed">{t('features.local.desc')}</p>
             </div>
             <div className="flex-1">
-              <img src="/screen3.png" alt="Settings" className="w-full rounded-2xl shadow-2xl border border-white/10" />
+              <img src="./screen3.png" alt="Settings" className="w-full rounded-2xl shadow-2xl border border-white/10" />
             </div>
           </div>
         </section>
