@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html[dir="rtl"] {
+    @apply font-vazir;
+  }
+  html[dir="ltr"] {
+    @apply font-sans;
+  }
+  body {
+    background-color: theme('colors.background');
+    color: theme('colors.foreground');
+  }
+}

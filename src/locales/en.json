@@ -1,0 +1,27 @@
+{
+  "title": "Goyak",
+  "subtitle": "AI Real-Time Audio Dubbing & Live Translation",
+  "description": "Experience seamless real-time translation and voice dubbing with AI. Goyak listens, translates, and speaks in your native language instantly.",
+  "download": "Download for Windows",
+  "github": "View on GitHub",
+  "features": {
+    "title": "Key Features",
+    "realtime": {
+      "title": "Real-Time Dubbing",
+      "desc": "Translates any system audio directly to your ears with minimal latency."
+    },
+    "voice": {
+      "title": "Natural Voices",
+      "desc": "Powered by Gemini AI, preserving emotion, tone, and speaking style."
+    },
+    "local": {
+      "title": "Local & Secure",
+      "desc": "Runs completely locally on your desktop. Only audio chunks are sent to the AI API."
+    },
+    "bilingual": {
+      "title": "Bilingual Interface",
+      "desc": "Full support for English and Persian (RTL) out of the box."
+    }
+  },
+  "footer": "Open-source and built with Tauri, React, and Gemini AI."
+}
