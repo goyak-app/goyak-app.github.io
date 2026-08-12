@@ -23,5 +23,15 @@
       "desc": "Full support for English and Persian (RTL) out of the box."
     }
   },
-  "footer": "Open-source and built with Tauri, React, and Gemini AI."
+  "modal": {
+    "title": "Download Goyak",
+    "auto_download": "Auto Download",
+    "auto_download_desc": "Automatically download the latest Windows installer.",
+    "manual_download": "Manual Download",
+    "manual_download_desc": "Go to GitHub releases page to download manually.",
+    "downloading": "Fetching latest release...",
+    "error_fallback": "Failed to fetch automatically. Redirecting to releases page...",
+    "close": "Close"
+  },
+  "footer": "Built with a little bit of tea and free time ☕"
 }

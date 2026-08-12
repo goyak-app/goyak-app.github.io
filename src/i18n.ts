@@ -19,10 +19,20 @@ i18n
     }
   });
 
-i18n.on('languageChanged', (lng) => {
+const applyLanguageOptions = (lng: string) => {
   const dir = lng === 'fa' ? 'rtl' : 'ltr';
   document.documentElement.setAttribute('dir', dir);
   document.documentElement.setAttribute('lang', lng);
+};
+
+i18n.on('languageChanged', applyLanguageOptions);
+i18n.on('initialized', () => {
+  applyLanguageOptions(i18n.resolvedLanguage || i18n.language);
 });
+
+// Just in case it's already initialized synchronously
+if (i18n.isInitialized) {
+  applyLanguageOptions(i18n.resolvedLanguage || i18n.language);
+}
 
 export default i18n;
